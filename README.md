@@ -18,3 +18,4 @@ file remove cn_ip_cidr.rsc
 ## Tanks to
 
 [ispip.clang.cn](https://ispip.clang.cn/)
+Github: RookieZoe
