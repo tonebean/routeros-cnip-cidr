@@ -3,8 +3,6 @@ Fork from Github: RookieZoe
 
 CN ip list script generator for MikroTik RouterOS
 
-[![status](https://img.shields.io/github/workflow/status/RookieZoe/routeros-cnip-cidr/cnip-cidr-gen?color=34d058&label=cnip-cidr-gen&logo=github&logoColor=fff)](https://github.com/tonebean/routeros-cnip-cidr/actions/workflows/cnip-cidr-gen.yml)
-
 ## To use
 
 ```Ros Script
