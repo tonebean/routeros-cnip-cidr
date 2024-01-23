@@ -11,5 +11,4 @@ cat > $WORK_DIR/dist/cn_ip_cidr.rsc << EOF
 /ip firewall address-list remove [/ip firewall address-list find list=cn_ip_cidr]
 /ip firewall address-list
 EOF
-cat $WORK_DIR/tmp/all_cn.txt | awk '{ printf(":do {add address=%s list=cn_ip_cidr} on-error={}\n",$0) }' >> $WORK_DIR/dist/cn_ip_cidr.rsc && \
-cat >> $WORK_DIR/dist/cn_ip_cidr.rsc
+cat $WORK_DIR/tmp/all_cn.txt | awk '{ printf(":do {add address=%s list=cn_ip_cidr} on-error={}\n",$0) }' >> $WORK_DIR/dist/cn_ip_cidr.rsc
