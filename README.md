@@ -7,11 +7,11 @@ CN ip list script generator for MikroTik RouterOS
 ## To use
 
 ```Ros Script
-/tool fetch url=https://mirror.ghproxy.com/https://raw.githubusercontent.com/xxxx/xxx.rsc dst-path=cnip.rsc
+/tool fetch url=https://mirror.ghproxy.com/https://raw.githubusercontent.com/xxxx/cn_ip_cidr.rsc
 system logging disable 0
-import file-name=cnip.rsc
+import file-name=cn_ip_cidr.rsc
 system logging enable 0
-file remove cnip.rsc
+file remove cn_ip_cidr.rsc
 :log info ("cnip列表已更新")
 ```
 
