@@ -1,4 +1,5 @@
 # RouterOS CN IP List(Only IPv4)
+Fork from Github: RookieZoe
 
 CN ip list script generator for MikroTik RouterOS
 
@@ -18,4 +19,3 @@ file remove cn_ip_cidr.rsc
 ## Tanks to
 
 [ispip.clang.cn](https://ispip.clang.cn/)
-Github: RookieZoe
