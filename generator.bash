@@ -5,7 +5,7 @@ if [ ! -d "$WORK_DIR/tmp" ];then
   mkdir $WORK_DIR/tmp
 fi
 
-curl -s https://ispip.clang.cn/all_cn.txt -o $WORK_DIR/tmp/all_cn.txt && \
+curl -s https://raw.githubusercontent.com/soffchen/GeoIP2-CN/release/CN-ip-cidr.txt -o $WORK_DIR/tmp/all_cn.txt && \
 cat > $WORK_DIR/dist/cn_ip_cidr.rsc << EOF
 /log info "Import cn ipv4 cidr list..."
 /ip firewall address-list remove [/ip firewall address-list find list=cn_ip_cidr]
