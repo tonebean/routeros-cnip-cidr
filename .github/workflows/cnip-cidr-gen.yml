@@ -2,7 +2,10 @@ name: cnip-cidr-gen
 
 on:
   schedule:
+  #Weekly cron @3:55
     - cron: '55 3 * * 1'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   build:
