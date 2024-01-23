@@ -1,4 +1,4 @@
-# RouterOS CN IP List
+# RouterOS CN IP List(Only IPv4)
 
 CN ip list script generator for MikroTik RouterOS
 
