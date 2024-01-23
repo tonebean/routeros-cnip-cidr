@@ -1,6 +1,9 @@
 /log info "Import cn ipv4 cidr list..."
 /ip firewall address-list remove [/ip firewall address-list find list=cn_ip_cidr]
 /ip firewall address-list
+add address=10.0.0.0/8 list=cn_ip_cidr comment=LanIP
+add address=172.16.0.0/12 list=cn_ip_cidr comment=LanIP
+add address=192.168.0.0/16 list=cn_ip_cidr comment=LanIP
 :do {add address=1.1.8.0/24 list=cn_ip_cidr} on-error={}
 :do {add address=1.2.4.0/24 list=cn_ip_cidr} on-error={}
 :do {add address=1.8.1.0/24 list=cn_ip_cidr} on-error={}
